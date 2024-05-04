@@ -2,11 +2,79 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchoolApp.Pages.SignInPage"
-             Title="SignInPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="SignInPage"
+              Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="220"/>
+            <RowDefinition  Height="*"/>
+            <RowDefinition  Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Path Data="m0,-1l800.58444,-1l8.41558,166.84079c-583.96105,127.44372 -392.37664,-73.11174 -810.00000,26.79374l0,-193.63453z" Fill ="#5a19a0"/>
+        <Path Data="m299.5,248" Opacity="NaN" Stroke="#000" Fill="#332D40"/>
+
+        <StackLayout>
+            <Frame BackgroundColor="#aaffff" HeightRequest="160" WidthRequest="160" CornerRadius="80" Padding="0" Margin="0,60,0,0" HorizontalOptions="Center">
+                <Image Source="avatar.png" Aspect="AspectFill" Margin="0"/>
+
+            </Frame>
+        </StackLayout>
+
+        <Grid RowSpacing="5" Grid.Row="1" Margin="20,20,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Text="Добро пожаловать!" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold" Padding="0" Margin="0"/>
+            <Label Grid.Row="2" Text="Войдите чтобы продолжить" HorizontalOptions="Center" FontSize="Subtitle"/>
+
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="MediumPurple" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                            <Image Source="iconuser.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry Text="{Binding UserName}" Placeholder="Username" PlaceholderColor="#aa66ff" TextColor="#aaffff" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Margin="0,8,0,0"  Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="MediumPurple" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="6,2,6,8" Margin="3">
+                            <Image Source="lock.png" Aspect="AspectFill" Margin="0"/>
+                        </Frame>
+                        <Entry Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#aa66ff" TextColor="#aaffff" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout Orientation="Horizontal" Margin="0,8,0,0" Padding="0">
+                    <CheckBox IsChecked="False"/>
+                    <Label Text="Запомнить меня" Padding="0,0,20,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Забыли пароль?" TextColor="#aa66ff" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+                <Button Text="Войти" BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="200" Margin="0,15,0,0" 
+                        Clicked="Button_Clicked"  FontSize="Body"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,120,0,0" Padding="0">
+                    <Label Text="Нет аккаунта?" Padding="0,0,20,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <Label Text="Регистрация" TextColor="#aa66ff" FontSize="Small" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
