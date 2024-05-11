@@ -1,4 +1,5 @@
 ﻿using AutoSchoolApp.Pages;
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 
 namespace AutoSchoolApp
@@ -14,7 +15,8 @@ namespace AutoSchoolApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                })
+                .UseMauiCommunityToolkit();
 
 #if DEBUG
     		builder.Logging.AddDebug();
