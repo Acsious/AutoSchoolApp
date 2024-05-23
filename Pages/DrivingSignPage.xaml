@@ -24,8 +24,7 @@
             <StackLayout Orientation="Horizontal" Padding="20,0,20,0">
                 <Label x:Name="datelabel" Text="Выберите дату"           
                     VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"/>
-                <DatePicker  x:Name="datePicker"  Format="d" DateSelected="DatePicker_DateSelected"  HorizontalOptions="EndAndExpand" FontSize="18" />  <!--MinimumDate="{Binding AppointmentDate}" MaximumDate="{Binding WeekAfterDate}"-->
-                            
+                <DatePicker  x:Name="datePicker"  Format="d" DateSelected="DatePicker_DateSelected"  HorizontalOptions="EndAndExpand" FontSize="18" />
             </StackLayout>
         </Frame>
         

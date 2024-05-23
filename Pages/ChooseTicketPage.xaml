@@ -3,10 +3,534 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchoolApp.Pages.ChooseTicketPage"
              Title="ChooseTicketPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Margin="20" Spacing="0">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+         Text="Подготовка по вопросам"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         FontAttributes="Bold"
+         FontSize="20"
+         Margin="0,20,0,60"/>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="1" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="2" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="3" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+        
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="4" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="5" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="6" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="7" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="8" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="9" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="10" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_9"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="11" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_10"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="12" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_11"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="13" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_12"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="14" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_13"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="15" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_14"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="16" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_15"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="17" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_16"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="18" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_17"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="19" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_18"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="20" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_19"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="21" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_20"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="22" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_21"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="23" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_22"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="24" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_23"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="25" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_24"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="26" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_25"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="27" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_26"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="28" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_27"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="29" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_28"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="30" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_29"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="31" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_30"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="32" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_31"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="33" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_32"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="34" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_33"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="35" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_34"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="36" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_35"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="37" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_36"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="38" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_37"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="39" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_38"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="4" Margin="3">
+                    <Label Text="40" TextColor="#330044" FontSize="14"/>
+                </Frame>
+                <Label Text="Решено дней назад: {Binding DaysAgo}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество ошибок: {Binding ErrorsCount}" TextColor="#330044" FontSize="14" IsVisible="False" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_39"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>

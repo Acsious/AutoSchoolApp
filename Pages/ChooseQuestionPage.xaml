@@ -3,10 +3,273 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchoolApp.Pages.ChooseQuestionPage"
              Title="ChooseQuestionPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout Margin="20" Spacing="0">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+         Text="Подготовка по вопросам"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         FontAttributes="Bold"
+         FontSize="20"
+         Margin="0,20,0,60"/>
+        
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Общие положения" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 25" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Дорожные знаки" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 126" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Дорожная разметка" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 40" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Сигналы светофора и регулировщика" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 39" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Начало движения, маневрирование" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 113" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Скорость движения" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 19" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Обгон, опережение, встречный разъезд" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 36" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Остановка и стоянка" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 47" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Проезд перекрестков" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 113" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Пользование внешними световыми приборами и звуковыми сигналами" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 23" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_9"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Неисправности и условия допуска транспортных средств к эксплуатации" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 26" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_10"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Безопасность движения и техника управления автомобилем" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 59" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_11"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Оказание доврачебной медицинской помощи" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 20" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_12"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Общие обязанности водителей" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 15" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_13"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Расположение транспортных средств на проезжей части" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 24" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_14"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Приоритет маршрутных транспортных средств" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 5" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_15"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Буксировка механических транспортных средств" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 8" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_16"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Применение специальных сигналов" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 9" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_17"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Движение по автомагистралям" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 13" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_18"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Учебная езда и дополнительные требования к движению велосипедов" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 4" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_19"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Движение в жилых зонах" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 7" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_20"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Движение через железнодорожные пути" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 11" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_21"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Пешеходные переходы и места остановок маршрутноых транспортных средств" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 5" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_22"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Перевозка людей и грузов" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 6" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_23"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ответственность водителя" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 15" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_24"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Применение аварийной сигнализации и знака аварийной остановки" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <Label Text="Количество вопросов: 9" TextColor="#330044" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_25"/>
+            </Frame.GestureRecognizers>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
