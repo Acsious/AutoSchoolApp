@@ -9,7 +9,7 @@ public partial class SignUpPage : ContentPage
 
     private void RegButton_Clicked(object sender, EventArgs e)
     {
-        Navigation.PopToRootAsync();
+      Navigation.PopToRootAsync();
     }
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)

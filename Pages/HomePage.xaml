@@ -32,8 +32,8 @@
 
         <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
             <Button Text="Записаться на практическое занятие" BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="350" Margin="0,25,0,0" FontSize="Body" Clicked="OnPracticalTrainingClicked"/>
-            <Button Text="Решать вопросы"  BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="350" Margin="0,25,0,0" FontSize="Body" Clicked="OnAnswerQuestionsClicked"/>
-            <Button Text="Решать билеты"  BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="350" Margin="0,25,0,0" FontSize="Body" Clicked="OnSolveTicketsClicked"/>
+            <Button Text="Готовиться по вопросам"  BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="350" Margin="0,25,0,0" FontSize="Body" Clicked="OnAnswerQuestionsClicked"/>
+            <Button Text="Готовиться по билетам"  BackgroundColor="#5a19a0" TextColor="#aaffff" FontAttributes="Bold" CornerRadius="30" WidthRequest="350" Margin="0,25,0,0" FontSize="Body" Clicked="OnSolveTicketsClicked"/>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
