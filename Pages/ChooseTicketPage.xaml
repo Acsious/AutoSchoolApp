@@ -6,13 +6,12 @@
 
     <ScrollView>
         <VerticalStackLayout Margin="20" Spacing="8 ">
-            <Label 
-         Text="Выберите билет"
-         VerticalOptions="Center" 
-         HorizontalOptions="Center"
-         FontAttributes="Bold"
-         FontSize="20"
-         Margin="0,20,0,60"/>
+            <Label Text="Выберите билет"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   Margin="0,20,0,60"/>
 
             <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
                 <StackLayout Orientation="Horizontal">

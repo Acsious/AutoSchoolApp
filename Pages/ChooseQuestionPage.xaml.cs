@@ -9,7 +9,7 @@ public partial class ChooseQuestionPage : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-
+        Navigation.PushAsync(new PrepQuestionsPage());
     }
 
     private void TapGestureRecognizer_Tapped_1(object sender, TappedEventArgs e)

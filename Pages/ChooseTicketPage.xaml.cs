@@ -9,7 +9,7 @@ public partial class ChooseTicketPage : ContentPage
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-
+        Navigation.PushAsync(new PrepTicketsPage());
     }
 
     private void TapGestureRecognizer_Tapped_1(object sender, TappedEventArgs e)

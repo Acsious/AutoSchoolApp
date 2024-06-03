@@ -3,10 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AutoSchoolApp.Pages.PrepQuestionsPage"
              Title="PrepQuestionsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Margin="20" Spacing="8 ">
+
+        <StackLayout IsVisible="False">
+            <Frame HeightRequest="500"  Padding="0" Margin="0,60,0,0" HorizontalOptions="Center">
+                <Image Source="{Binding QuestionPicture}"  Aspect="AspectFill" Margin="0"/>
+            </Frame>
+        </StackLayout>
+
+        <Label Text="{Binding QuestionFormulation}"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="18"
+                   Margin="0,20,0,60"/>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                    <Label Text="1." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
+                </Frame>
+                <Label Text="{Binding CorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                    <Label Text="2." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
+                </Frame>
+                <Label Text="{Binding FirstIncorrectAnswer}" TextColor="#aaffff" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                    <Label Text="3." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
+                </Frame>
+                <Label Text="{Binding SecondIncorrectAnswer}" TextColor="#aaffff"  FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+            </Frame.GestureRecognizers>
+        </Frame>
+
+        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" IsVisible="False">
+            <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                    <Label Text="4." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
+                </Frame>
+                <Label Text="{Binding ThirdIncorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+            </Frame.GestureRecognizers>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>
