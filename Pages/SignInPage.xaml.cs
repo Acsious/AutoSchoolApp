@@ -17,8 +17,12 @@ public partial class SignInPage : ContentPage
         Navigation.PushAsync(new SignUpPage());
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new HomePage());
+        await DisplayAlert("Ошибка", "Неверный логин или пароль", "ОK");
+
+        await DisplayAlert("Ошибка", "К сожалению, ваш аккаунт заблокирован", "ОK");
+
+        await Navigation.PushAsync(new HomePage());
     }
 }

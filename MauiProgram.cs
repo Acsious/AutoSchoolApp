@@ -1,4 +1,5 @@
 ﻿using AutoSchoolApp.Pages;
+using AutoSchoolApp.ViewModels;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 
@@ -30,6 +31,10 @@ namespace AutoSchoolApp
             builder.Services.AddTransient<SignUpPage>();
             builder.Services.AddTransient<SignInPage>();
 
+            builder.Services.AddSingleton<SignUpViewModel>();
+            builder.Services.AddSingleton<SignInViewModel>();
+            builder.Services.AddSingleton<DrivingSignViewModel>();
+            builder.Services.AddSingleton<ForgotPasswordViewModel>();
 
             return builder.Build();
         }

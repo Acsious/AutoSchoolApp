@@ -7,11 +7,13 @@
 
         <StackLayout IsVisible="False">
             <Frame HeightRequest="500"  Padding="0" Margin="0,60,0,0" HorizontalOptions="Center">
-                <Image Source="{Binding QuestionPicture}"  Aspect="AspectFill" Margin="0"/>
+                <!--<Image Source="{Binding QuestionPicture}"  Aspect="AspectFill" Margin="0"/>-->
+                <Image Source="dotnet_bot.png"  Aspect="AspectFill" Margin="0"/>
             </Frame>
         </StackLayout>
 
-        <Label Text="{Binding QuestionFormulation}"
+        <!--<Label Text="{Binding QuestionFormulation}"-->
+        <Label Text="В каком случае водитель совершит вынужденную остановку?"
                    VerticalOptions="Center" 
                    HorizontalOptions="Center"
                    FontAttributes="Bold"
@@ -20,10 +22,11 @@
 
         <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" >
             <StackLayout Orientation="Horizontal">
-                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                <Frame BackgroundColor="Green" HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
                     <Label Text="1." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
                 </Frame>
-                <Label Text="{Binding CorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <!--<Label Text="{Binding CorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>-->
+                <Label Text="Остановившись на проезжей части из-за технической неисправности транспортного средства" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -32,10 +35,11 @@
 
         <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
             <StackLayout Orientation="Horizontal">
-                <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
+                <Frame  HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
                     <Label Text="2." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
                 </Frame>
-                <Label Text="{Binding FirstIncorrectAnswer}" TextColor="#aaffff" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <!--<Label Text="{Binding FirstIncorrectAnswer}" TextColor="#aaffff" FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>-->
+                <Label Text="Остановившись непосредственно перед пешеходным переходом, чтобы уступить дорогу пешеходу" TextColor="#aaffff"   FontSize="14"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
@@ -47,23 +51,37 @@
                 <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
                     <Label Text="3." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
                 </Frame>
-                <Label Text="{Binding SecondIncorrectAnswer}" TextColor="#aaffff"  FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                <!--<Label Text="{Binding SecondIncorrectAnswer}" TextColor="#aaffff"  FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>-->
+                <Label Text="В обоих перечисленных случаях" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
             </Frame.GestureRecognizers>
         </Frame>
 
-        <Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" IsVisible="False">
+        <!--<Frame BackgroundColor="#5a19a0" BorderColor="#330044" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30" IsVisible="False">
             <StackLayout Orientation="Horizontal">
                 <Frame HeightRequest="50" WidthRequest="50" CornerRadius="30" Padding="18,12,12,15" Margin="3">
                     <Label Text="4." TextColor="#330044" FontSize="18" FontAttributes="Bold"/>
                 </Frame>
-                <Label Text="{Binding ThirdIncorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                --><!--<Label Text="{Binding ThirdIncorrectAnswer}" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>--><!--
+                <Label Text="" TextColor="#aaffff" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
             </Frame.GestureRecognizers>
-        </Frame>
+        </Frame>-->
+
+        <!--TO DELETE-->
+        
+        <!--<Label Text="Правильный ответ 1."
+                   FontAttributes="Bold"
+                   FontSize="16"
+                   Margin="0,20,0,0"/>
+        <Label Text="Вынужденная остановка - прекращение движения транспортного средства, связанное с его технической неисправностью, опасностью, создаваемой перевозимым грузом,
+               состоянием водителя или появления препятсвия на дороге. (Пункт 1.2 ПДД, термин Вынужденная остановка)"
+                   FontAttributes="Bold"
+                   FontSize="14"
+                   Margin="0,20,0,60"/>-->
     </VerticalStackLayout>
 </ContentPage>

@@ -20,7 +20,10 @@ public partial class DrivingSignPage : ContentPage
 
     private async void RegButton_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PopToRootAsync();
+        await DisplayAlert("Ошибка", "Данное время уже занято", "ОK");
+
+        await DisplayAlert("Запись создана", "Ваше занятие будет 06.06.2024 17:00", "ОK");
+        await Navigation.PopAsync();
     }
 
     private void timePicker_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
